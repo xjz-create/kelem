@@ -31,7 +31,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:gravity="center" />
-         </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,7 +49,19 @@
                 android:textAlignment="center"
                 android:textSize="14sp" />
 
-
+            <SearchView
+                android:id="@+id/my_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.8"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/round_rect"
+                android:iconifiedByDefault="false"
+                android:queryHint="搜饮品"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
         </LinearLayout>
 
         <LinearLayout

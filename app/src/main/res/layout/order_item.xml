@@ -15,6 +15,9 @@
         android:layout_marginVertical="10dp"
         android:textColor="@color/black"/>
 
+
+
+
     <TextView
         android:id="@+id/textView_time"
         android:layout_width="match_parent"

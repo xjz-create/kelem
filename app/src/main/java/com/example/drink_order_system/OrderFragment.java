@@ -26,7 +26,7 @@ public class OrderFragment extends Fragment {
     private RecyclerView left_listView; //左侧类别列表
     private LinearLayoutManager right_llM;
     private TextView right_title;
-
+    private SearchView searchView;
 
     private AlertDialog chooseDialog = null;
     private AlertDialog.Builder builder = null;
@@ -44,15 +44,16 @@ public class OrderFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_order, container, false);
-
-
-
+        SearchView mSearch = (SearchView) view.findViewById(R.id.my_search);
+        int id = mSearch.getContext().getResources().getIdentifier("android:id/search_src_text", null, null);
+        TextView text_search = (TextView) mSearch.findViewById(id);
+        text_search.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
 
         right_title = (TextView) view.findViewById(R.id.Top_drinkType);
 
         right_listView = (RecyclerView) view.findViewById(R.id.rec_right);
         left_listView = (RecyclerView) view.findViewById(R.id.rec_left);
-
+        searchView = (SearchView) view.findViewById(R.id.my_search);
         builder = new AlertDialog.Builder(this.getActivity());
         view_choose = inflater.inflate(R.layout.dialogue_choose, null, false);
         builder.setView(view_choose);
@@ -181,7 +182,25 @@ public class OrderFragment extends Fragment {
         });
 
 
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
 
+            @Override
+            public boolean onQueryTextChange(String queryText) {
+                for (int i = 0; i < drinks_array.size(); i++) {
+                    if (drinks_array.get(i).get_name().contains(queryText)) {
+                        if (right_llM != null) {
+                            right_llM.scrollToPositionWithOffset(i, 0);
+                            break;
+                        }
+                    }
+                }
+                return true;
+            }
+        });
         return view;
     }
 
@@ -231,9 +250,6 @@ public class OrderFragment extends Fragment {
                 R.drawable.add06));
         drinks_array.add(new Drinks("复联限定07(add7)", 18f, "可大可小",
                 R.drawable.add07));
-
-
-
 
 
 
