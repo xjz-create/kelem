@@ -217,11 +217,24 @@ public class OrderFragment extends Fragment {
                 R.drawable.redtea_sq));
         drinks_array.add(new Drinks("纯绿妍茶后", 8f, "甄选茶园定制绿妍茶底，淡雅芳幽，默认不加糖，0糖0卡轻负担",
                 R.drawable.greentea_sq));
+        drinks_array.add(new Drinks("复联限定01(add1)", "\uD83D\uDE0E 复联限定",
+                18f, "美式翘臀", R.drawable.add01));
+        drinks_array.add(new Drinks("复联限定02(add2)", 18f,
+                "全视之眼", R.drawable.add02));
+        drinks_array.add(new Drinks("复联限定03(add3)", 18f, "no husband",
+                R.drawable.add03));
+        drinks_array.add(new Drinks("复联限定04(add4)", 18f, "I'm IronMan",
+                R.drawable.add04));
+        drinks_array.add(new Drinks("复联限定05(add5)", 18f, "要想生活过得去",
+                R.drawable.add05));
+        drinks_array.add(new Drinks("复联限定06(add6)", 18f, "友好邻居",
+                R.drawable.add06));
+        drinks_array.add(new Drinks("复联限定07(add7)", 18f, "可大可小",
+                R.drawable.add07));
 
 
 
-//001
-//002
+
 
 
         for (int i = 0; i < drinks_array.size(); i++) {
