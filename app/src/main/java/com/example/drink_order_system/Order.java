@@ -6,6 +6,7 @@ public class Order {
 	private String time;
 	private String takeAway;
 	private String cost;
+	private Flavor flavor;  // 关联的 Flavor 对象
 	Order(String info)
 	{
 		String[] info_list = info.split(",");
@@ -13,6 +14,7 @@ public class Order {
 		time = info_list[1];
 		takeAway = info_list[2];
 		cost = info_list[3];
+		this.flavor = flavor; // 初始化 flavor
 	}
 
 	public String getOrder_number() {
@@ -30,4 +32,10 @@ public class Order {
 	public String getCost() {
 		return cost;
 	}
+
+	public Flavor getFlavor() {
+		return flavor; // 新增方法，获取 flavor 信息
+	}
+
+
 }

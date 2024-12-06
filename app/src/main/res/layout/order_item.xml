@@ -60,5 +60,14 @@
         android:layout_weight="1"
         android:background="?android:attr/listDivider" />
 
+    <!-- 新增：饮品详细信息（规格、糖量、温度等） -->
+    <TextView
+        android:id="@+id/textView_flavorDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="规格: 中杯, 糖量: 全糖, 温度: 热"
+        android:textSize="14sp"
+        android:paddingTop="8dp"/>
+
 
 </LinearLayout>

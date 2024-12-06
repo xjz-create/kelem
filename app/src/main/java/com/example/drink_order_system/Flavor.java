@@ -28,4 +28,15 @@ public class Flavor {
 	public String getSize() {
 		return size;
 	}
+	public String getSugar() {
+		return sugar;
+	}
+
+	public String getTemperature() {
+		return temperature;
+	}
+
+
+
+
 }

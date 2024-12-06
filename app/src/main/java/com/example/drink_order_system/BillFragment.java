@@ -22,6 +22,8 @@ import java.util.ArrayList;
  * Use the {@link BillFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
+
+
 public class BillFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
