@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity{
         handlePermission();
         ET_username = findViewById(R.id.et_username);
         ET_password = findViewById(R.id.et_password);
+
     }
 
     public void BT_signUp_onClick(View v)

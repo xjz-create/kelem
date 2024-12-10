@@ -67,10 +67,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69d974ba-476f-449b-bd6d-443b9757b572" name="Changes" comment="新增奶茶复仇者联盟系列限定7款奶茶  改进版加注释">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/BillAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/BillAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/BillFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/BillFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/Flavor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/Flavor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/Drinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/Drinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/drink_order_system/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/order_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/order_item.xml" afterDir="false" />
     </list>
@@ -146,12 +148,12 @@
     &quot;assignee&quot;: &quot;xjz-create&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:xjz-create/kelem.git",
-    "accountId": "90b6cd15-a10d-43e8-8326-e10cf4ab7f0e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:xjz-create/kelem.git&quot;,
+    &quot;accountId&quot;: &quot;90b6cd15-a10d-43e8-8326-e10cf4ab7f0e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>

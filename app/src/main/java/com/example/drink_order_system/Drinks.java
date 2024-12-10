@@ -2,7 +2,7 @@ package com.example.drink_order_system;
 
 import java.util.ArrayList;
 
-public class Drinks {
+public class      Drinks {
 	private int number;
 	private String name;
 	private String type;

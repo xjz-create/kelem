@@ -57,6 +57,8 @@ public class BillAdapter extends RecyclerView.Adapter {
         private final TextView TV_cost;
 
         private final TextView TV_flavorDetails;
+        private final TextView TV_drinksDetails;
+
 
         BillViewHolder(View itemView) {
             super(itemView);
@@ -65,6 +67,7 @@ public class BillAdapter extends RecyclerView.Adapter {
             TV_takeAway = (TextView) itemView.findViewById(R.id.textView_takeAway);
             TV_cost = (TextView) itemView.findViewById(R.id.textView_cost);
             TV_flavorDetails = itemView.findViewById(R.id.textView_flavorDetails);  // 绑定新的 TextView
+            TV_drinksDetails = itemView.findViewById(R.id.textView_drinksDetails);
         }
 
         void bindBean(final Order bean) {
@@ -75,8 +78,16 @@ public class BillAdapter extends RecyclerView.Adapter {
 
 
             Flavor flavor = bean.getFlavor();  // 获取与订单关联的 Flavor 对象
+            Drinks drinks = bean.getDrink();  // 获取与订单关联的 Flavor 对象
+            System.out.println("Flavor: " + flavor);
+            System.out.println("Drinks: " + drinks);
+
             if (flavor != null) {
                 TV_flavorDetails.setText("规格: " + flavor.getSize() + ", 糖量: " + flavor.getSugar() + ", 温度: " + flavor.getTemperature());
+
+            }
+            if (drinks != null) {
+                TV_drinksDetails.setText("奶茶 :"+ drinks.get_name());
 
             }
         }
